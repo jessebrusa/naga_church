@@ -1,0 +1,174 @@
+:root {
+    --primary-color: #153243;
+    --primary-color-dark: #102f42;
+    --primary-color-darker: #0a2d41;
+    --primary-color-darkest: #052b41;
+    --primary-color-fade: #002840;
+
+    --secondary-color: #284B63;
+    --secondary-color-light: #4a708a;
+    --secondary-color-lighter: #7599b1;
+    --secondary-color-lightest: #abc6d8;
+    --secondary-color-fade: #ebf7ff;
+
+    --accent-color: #B4B8AB;
+    --accent-color-dark: #8E8E8E; 
+    --accent-color-light: #c5cabb;
+    --accent-color-lighter: #d6dccb;
+    --accent-color-lightest: #e8eddb;
+    --accent-color-fade: #f9ffeb;
+
+    --background-color: #F4F9E9;
+    --background-color-light: #f5fae9;
+    --background-color-lighter: #f6fcea;
+    --background-color-lightest: #f7fdea;
+    --background-color-fade: #f9ffeb;
+
+    --text-color: #153243; 
+    --text-shadow-color: rgba(255, 255, 255, 0.9); 
+    --text-color-light: #355b72;
+    --text-color-lighter: #638aa1;
+    --text-color-lightest: #a0bed0;
+    --text-color-fade: #ebf7ff;
+
+    --light-text-color: #EEF0EB;
+    --light-text-color-light: #f0f4eb;
+    --light-text-color-lighter: #f3f8eb;
+    --light-text-color-lightest: #f5fbeb;
+    --light-text-color-fade: #f7ffeb;
+
+    --footer-background-color: #153243;
+    --footer-text-color: #EEF0EB;
+    --footer-link-color: #B4B8AB;
+    --footer-secondary-background-color: #284B63;
+    --footer-top-background-color: #102f42; 
+}
+
+body {
+    background: linear-gradient(to bottom, var(--background-color), var(--background-color-fade));
+    font-family: 'Roboto', sans-serif; 
+}
+
+.navbar {
+    background: linear-gradient(to right, var(--primary-color), var(--primary-color-fade));
+}
+
+.navbar .navbar-brand span,
+.navbar .nav-link {
+    color: var(--footer-text-color);
+}
+
+.navbar-toggler {
+    border-color: var(--footer-text-color);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(238, 240, 235, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.jumbotron {
+    background: linear-gradient(to bottom, var(--accent-color), var(--accent-color-fade));
+    color: var(--text-color);
+    text-shadow: 2px 2px 5px var(--text-shadow-color); 
+    font-family: 'Roboto', sans-serif; 
+}
+
+.jumbotron .btn-primary {
+    background-color: var(--accent-color-dark); 
+    border-color: var(--accent-color-dark);
+    box-shadow: none; 
+    text-shadow: none; 
+}
+
+.jumbotron .btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.jumbotron .btn-secondary {
+    background-color: var(--secondary-color-light); 
+    border-color: var(--secondary-color-light);
+    box-shadow: none; 
+    text-shadow: none; 
+}
+
+.jumbotron .btn-secondary:hover {
+    background-color: var(--secondary-color);
+    border-color: var (--secondary-color);
+}
+
+.jumbotron hr {
+    border-color: var(--secondary-color);
+}
+
+footer {
+    background: linear-gradient(to top, var(--footer-top-background-color), var(--footer-secondary-background-color));
+    color: var(--footer-text-color);
+}
+
+footer a {
+    color: var(--footer-link-color);
+}
+
+footer .footer-secondary {
+    background: linear-gradient(to bottom, var(--footer-secondary-background-color), var(--footer-background-color));
+}
+
+.carousel-item .overlay {
+    display: none;
+}
+
+.carousel-caption {
+    z-index: 2;
+    color: var(--text-color); 
+    text-shadow: 2px 2px 5px var(--text-shadow-color);
+    font-family: 'Roboto', sans-serif; 
+    background-color: rgba(255, 255, 255, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.lead {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        display: none; 
+    }
+
+    .carousel-caption {
+        position: static;
+        transform: none;
+        background-color: rgba(255, 255, 255, 0.9); 
+        margin-bottom: 20px;
+    }
+
+    .mobileHero {
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .display-4 {
+        text-align: center;
+    }
+
+    .lead {
+        text-align: center;
+    }
+
+    .callToActionBtn {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+}

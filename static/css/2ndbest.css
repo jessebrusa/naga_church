@@ -1,0 +1,52 @@
+:root {
+    --primary-color: #433E3F;
+    --secondary-color: #C69C72;
+    --accent-color: #8E6E53;
+    --background-color: #7A7265;
+    --text-color: #433E3F;
+    --light-text-color: #C0B7B1;
+    --footer-background-color: #433E3F;
+    --footer-text-color: #C0B7B1;
+    --footer-link-color: #8E6E53;
+    --footer-secondary-background-color: #C69C72;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar .navbar-brand span,
+.navbar .nav-link {
+    color: var(--footer-text-color);
+}
+
+.jumbotron {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.jumbotron .btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.jumbotron hr {
+    border-color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+}
+
+footer a {
+    color: var(--footer-link-color);
+}
+
+footer .footer-secondary {
+    background-color: var(--footer-secondary-background-color);
+}
